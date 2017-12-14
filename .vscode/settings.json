@@ -1,5 +1,6 @@
 {
-    "files.associations": {
-        "*.ts" : "typescriptreact"
-    }
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.formatOnSave": false,
+    "tslint.autoFixOnSave": true,
+    "prettier.singleQuote": true
 }
