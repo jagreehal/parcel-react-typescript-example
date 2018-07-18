@@ -1,6 +1,5 @@
 {
     "typescript.tsdk": "node_modules/typescript/lib",
-    "editor.formatOnSave": false,
-    "tslint.autoFixOnSave": true,
-    "prettier.singleQuote": true
+    "editor.formatOnSave": true,
+    "tslint.autoFixOnSave": true
 }

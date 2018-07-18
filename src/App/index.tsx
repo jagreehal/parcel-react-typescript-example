@@ -1,16 +1,25 @@
 import * as React from 'react';
-import './App.css';
+import styled from "react-emotion";
+
+const Card = styled('div')({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  minHeight: '100vh',
+  color: '#0c0c0c'
+});
+
 
 type Props = {
   name: string
 }
 
-class App extends React.Component<Props,{}> {
+class App extends React.Component<Props, {}> {
   render() {
     return (
-      <div className="app">
+      <Card data-testid="app">
         Well hello there {this.props.name} :)
-      </div>
+      </Card>
     );
   }
 }

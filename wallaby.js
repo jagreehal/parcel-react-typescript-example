@@ -3,7 +3,7 @@ module.exports = function(wallaby) {
   return {
     files: [
       'package.json',
-      'test/**/*.ts?(x)',
+      'test/**/*.js',
       'tsconfig.json',
       'src/**/*.ts?(x)',
       '!src/**/*spec.ts?(x)'
