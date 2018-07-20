@@ -1,7 +1,8 @@
 const path = require('path');
-module.exports = function(wallaby) {
+module.exports = function (wallaby) {
   return {
     files: [
+      'test/**/*.*',
       'package.json',
       'test/**/*.js',
       'tsconfig.json',
@@ -16,7 +17,10 @@ module.exports = function(wallaby) {
       runner: 'node'
     },
 
-    env: { type: 'node', runner: 'node' },
+    env: {
+      type: 'node',
+      runner: 'node'
+    },
     compilers: {
       '**/*.ts?(x)': wallaby.compilers.typeScript({
         typescript: require('typescript'),
