@@ -1,10 +1,6 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-
-ReactDOM.render(
-  <App name="Jag"/>,
-  document.getElementById("root") as HTMLElement
-);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
